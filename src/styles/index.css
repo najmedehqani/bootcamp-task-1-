@@ -1,0 +1,158 @@
+@import url("./fonts.css");
+
+/* Rest */
+* , *::before ,*::after{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  }
+:root {
+  --color-secondary:#234894;
+  --color-secondary-light:#AFCEDD;
+  --color-body:#1E1E1E;
+  --color-gray-light:#696969;
+  --color-primary : #219F95;
+  --border-radius-sm: 5px;
+  --border-radius-lg: 8px;
+}
+
+ /* Typography  */
+ body , button{
+font-family: iransans, sans-serif;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+font-size: 1.4rem;
+color: var(--color-body);
+line-height: 1.7;
+}
+h1{
+font-size: 2.2rem;
+font-weight: bold;
+}
+
+h3{
+font-size: 1.8rem;
+font-weight: bold;
+}
+@media screen and (min-width:768px){
+
+  body{
+    font-size: 1.6rem;
+  }
+}
+
+/* Button */
+.btn{
+  padding:  1.3rem 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  }
+  .btn--primary{
+    color:white;
+    background-color: var(--color-primary);
+    }
+    @media screen and (min-width:1024px){
+      .btn{
+        padding:  2rem 1.6rem;
+        font-size: 1.6rem;
+      }
+    }
+
+/* container */
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  }
+
+ /* Registrations */
+ 
+.registrations{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.registrations-wrapper{
+  display: grid;
+}
+
+@media screen and (min-width:768px){
+.registrations-wrapper{
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+@media screen and (min-width:1024px){
+  .registrations-wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+.registrations__title{
+  padding: 4rem 1.5rem 4rem 0;
+  }
+.registration{
+padding: 2rem 1.5rem;
+/* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); */
+}
+.registration__header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 1.7rem;
+}
+.registration__upload{
+
+}
+.registration__upload-lable{
+color:var(--color-secondary);
+margin-right: 0.5rem;
+font-weight: bold;
+}
+.registration__upload-number{
+display: inline-block;
+padding: 0.5rem 1.5rem;
+color:var(--color-secondary);
+background-color: var(--color-secondary-light);
+border-radius: var(--border-radius-lg);
+font-weight: bold;
+}
+.registration__date{
+color: var(--color-gray-light);
+font-size: 1.2rem;
+}
+.registration__description{
+color: var(--color-gray-light);
+font-size: 1.2rem;
+}
+.registration__footer{
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
+}
+.registration__meta{
+display: flex;
+align-items: center;
+gap: 0.8rem;
+}
+.registration__meta-avator{
+width: 40px;
+height: 40px;
+object-fit: cover;
+border-radius: var(--border-radius-sm);
+}
+.registration__meta-name{
+font-weight: bold;
+}
